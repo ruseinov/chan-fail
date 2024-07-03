@@ -1,0 +1,15 @@
+[package]
+name = "channel-fail"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = "0.21.1"
+numpy = "0.21.0"
+opencv = { version = "0.92.0" , features = ["clang-runtime", "imgcodecs"]}
+anyhow = "1.0.86"
+[[bin]]
+path = "src/lib.rs"
+name = "test"
